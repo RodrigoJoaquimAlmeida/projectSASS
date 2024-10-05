@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.img {
+  max-width: 100%;
+}
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: 1.6rem;
+  line-height: 1.4rem;
+  color: #1a1b1f;
+}
+
+.secao {
+  display: flex;
+  flex-flow: column;
+  padding: 6.1rem 2rem;
+}
+
+.container {
+  display: flex;
+  max-width: 100rem;
+  margin: auto;
+}
+
+.caixa {
+  background-color: #f1f1f1;
+}
+
+/*# sourceMappingURL=style.css.map */

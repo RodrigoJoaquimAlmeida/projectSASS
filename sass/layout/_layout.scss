@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the hole layout of the site.
+// -----------------------------------------------------------------------------
+.secao {
+	display: flex;
+	flex-flow: column;
+	padding: 6.1rem 2rem;
+}
+
+.container {
+	display: flex;
+	max-width: 100rem;
+	margin: auto;
+}
