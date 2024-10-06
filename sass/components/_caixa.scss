@@ -1,3 +1,71 @@
 .caixa {
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 	background-color: $cor-cinza-claro;
+	margin-bottom: 6.1rem;
+	border-radius: 2.5rem;
+	padding: 3.12rem 2.5rem;
+	max-width: 50rem;
+	gap: 2rem;
+	box-shadow: 0 0 1.2rem 0.2rem rgba(black, 0.3);
+
+	&__div-logo {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(25%, -25%);
+		background-color: $cor-cinza-claro;
+		display: flex;
+		align-items: center;
+		width: 6.5rem;
+		height: 6.5rem;
+		padding: 1.1rem;
+		border-radius: 50%;
+		box-shadow: 0 0 0.8rem rgba(black, 0.2);
+	}
+
+	&__titulos {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		gap: 0.65rem;
+	}
+
+	&__h1 {
+		font-size: 4.88rem;
+		line-height: 1;
+		color: $cor-azul-escuro;
+		text-align: center;
+	}
+
+	&__subtitulo {
+		font-size: 2.76rem;
+		font-weight: 700;
+
+		&--cinza {
+			color: $cor-cinza-escuro;
+		}
+	}
+
+	&__lista {
+		list-style: none;
+		font-size: 1.92rem;
+		line-height: 1.2;
+		display: flex;
+		flex-flow: column;
+		gap: 0.82rem;
+	}
+
+	&__item-lista {
+		display: flex;
+		align-items: start;
+		gap: 0.82rem;
+	}
+	&__icone {
+		width: 1.8rem;
+		margin-top: 0.21rem;
+	}
 }
