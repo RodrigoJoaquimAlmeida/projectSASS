@@ -22,4 +22,8 @@
 		border-color: darken($cor-amarelo, 35%);
 		color: #fff;
 	}
+
+	&--centralizado {
+		align-self: center;
+	}
 }

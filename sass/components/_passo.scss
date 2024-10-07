@@ -1,4 +1,6 @@
 .passo {
+	@include flex($direction: column, $gap: 1.6rem);
+
 	&__cabecalho {
 		@include flex($align: center, $gap: 0.8rem);
 	}
@@ -12,5 +14,13 @@
 	}
 
 	&__icone {
+	}
+
+	&__titulo {
+		@extend %subtitulo;
+
+		&--azul {
+			color: $cor-azul-claro;
+		}
 	}
 }

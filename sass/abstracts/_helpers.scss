@@ -4,6 +4,7 @@
 
 //Variables
 $cor-preta: #1a1b1f;
+$cor-preta-claro: #303030;
 $cor-cinza-claro: #f1f1f1;
 $cor-cinza: #e1e1e1;
 $cor-cinza-escuro: #4b4d4d;
@@ -23,4 +24,16 @@ $cor-azul-claro: #256783;
 	align-items: $align;
 	justify-content: $justify;
 	gap: $gap;
+}
+
+//extend
+
+%titulo {
+	font-size: 4.88rem;
+	line-height: 1;
+}
+
+%subtitulo {
+	font-size: 2.76rem;
+	font-weight: 600;
 }

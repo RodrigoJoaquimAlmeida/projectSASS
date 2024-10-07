@@ -4,7 +4,7 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	font-family: 1.6rem;
+	font-size: 1.6rem;
 	line-height: 1.4;
 	color: $cor-preta;
 }
@@ -12,4 +12,22 @@ body {
 b,
 strong {
 	font-weight: 600;
+}
+
+.titulo {
+	@extend %titulo;
+	font-weight: 500;
+
+	& span {
+		color: $cor-azul-claro;
+		font-weight: 600;
+	}
+}
+
+.subtitulo {
+	@extend %subtitulo;
+
+	& span {
+		color: $cor-amarelo;
+	}
 }

@@ -15,6 +15,14 @@
 		background-color: $cor-cinza;
 		box-shadow: 0 0.5rem 1rem -0.2rem rgba(black, 0.2);
 	}
+
+	&--quem {
+		background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/666a079387dbf494587480bd_pgcpy-bg-2.webp);
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		padding-bottom: 0;
+	}
 }
 
 .container {
@@ -22,6 +30,29 @@
 		position: relative;
 		align-items: end;
 		width: 100%;
+	}
+
+	&--passo,
+	&--aprender {
+		@include flex($direction: column, $gap: 6rem, $align: start);
+	}
+
+	&--quem {
+		width: 100%;
+		position: relative;
+	}
+}
+
+.grid {
+	&--passo {
+		grid-template-columns: repeat(3, 1fr);
+		row-gap: 6rem;
+		column-gap: 3rem;
+	}
+
+	&--aprender {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4rem;
 	}
 }
 
@@ -36,4 +67,55 @@
 
 .disclaimer__paragrafo {
 	font-size: 1.33rem;
+}
+
+.img-lira {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	align-self: center;
+}
+
+.cabecalho-titulo {
+	@include flex($align: center, $gap: 1.6rem);
+}
+
+.aprender-img {
+	border-radius: 2rem;
+	transition: transform ease 200ms;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+.quem {
+	&__texto {
+		margin-bottom: 6rem;
+		max-width: 50%;
+		@include flex($direction: column, $gap: 2rem);
+	}
+	&__cabecalho {
+		color: $cor-cinza-claro;
+		border-left: solid 4px $cor-amarelo;
+		padding-left: 2rem;
+		line-height: 1;
+	}
+
+	&__corpo {
+		color: $cor-preta-claro;
+		background-color: #fff;
+		border-radius: 0.96rem;
+		padding: 2.5rem;
+		line-height: 1.2;
+		font-weight: 100;
+		text-align: justify;
+		font-size: 1.95rem;
+	}
+
+	&__img {
+		position: absolute;
+		max-width: 20%;
+		bottom: 0;
+		right: 0;
+	}
 }
