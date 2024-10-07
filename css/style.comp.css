@@ -50,22 +50,28 @@ strong {
   font-weight: 700;
   font-size: 1.92rem;
 }
+.botao:hover {
+  border-width: 3px;
+}
 .botao--amarelo {
   background-color: #eebe2a;
   border-color: rgb(93.997826087, 72.8152173913, 7.502173913);
   color: #fff;
 }
+
 .caixa {
+  z-index: 1;
   position: relative;
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   align-items: center;
+  justify-content: start;
+  gap: 2rem;
   background-color: #f1f1f1;
   margin-bottom: 6.1rem;
   border-radius: 2.5rem;
   padding: 3.12rem 2.5rem;
   max-width: 50rem;
-  gap: 2rem;
   box-shadow: 0 0 1.2rem 0.2rem rgba(0, 0, 0, 0.3);
 }
 .caixa__div-logo {
@@ -75,7 +81,10 @@ strong {
   transform: translate(25%, -25%);
   background-color: #f1f1f1;
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
+  justify-content: start;
+  gap: 0;
   width: 6.5rem;
   height: 6.5rem;
   padding: 1.1rem;
@@ -84,8 +93,9 @@ strong {
 }
 .caixa__titulos {
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   align-items: center;
+  justify-content: start;
   gap: 0.65rem;
 }
 .caixa__h1 {
@@ -106,12 +116,16 @@ strong {
   font-size: 1.92rem;
   line-height: 1.2;
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
   gap: 0.82rem;
 }
 .caixa__item-lista {
   display: flex;
+  flex-flow: row nowrap;
   align-items: start;
+  justify-content: start;
   gap: 0.82rem;
 }
 .caixa__icone {
@@ -119,6 +133,20 @@ strong {
   margin-top: 0.21rem;
 }
 
+.passo__cabecalho {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 0.8rem;
+}
+.passo__caixa-icone {
+  width: 4.3rem;
+  height: 4.3rem;
+  padding: 0.82rem;
+  border-radius: 0.8rem;
+  background-color: #256783;
+}
 .secao--hero {
   background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64957938a8a62d8071397ed5_pgc-python-bg1.webp);
   background-size: cover;
@@ -126,13 +154,29 @@ strong {
   background-repeat: no-repeat;
   padding-bottom: 0;
 }
+.secao--disclaimer {
+  padding: 3.12rem 2rem;
+  background-color: #e1e1e1;
+  box-shadow: 0 0.5rem 1rem -0.2rem rgba(0, 0, 0, 0.2);
+}
 
 .container--hero {
+  position: relative;
   align-items: end;
+  width: 100%;
 }
 
 .div-lira {
+  position: absolute;
   display: flex;
+  height: 60rem;
+  right: 0;
+  bottom: 0;
+  transform: translateX(10%);
+}
+
+.disclaimer__paragrafo {
+  font-size: 1.33rem;
 }
 
 /*# sourceMappingURL=style.comp.css.map */

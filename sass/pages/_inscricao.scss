@@ -1,18 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.secao--hero {
-	background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64957938a8a62d8071397ed5_pgc-python-bg1.webp);
-	background-size: cover;
-	background-position: 50%;
-	background-repeat: no-repeat;
-	padding-bottom: 0;
+.secao {
+	&--hero {
+		background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64957938a8a62d8071397ed5_pgc-python-bg1.webp);
+		background-size: cover;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		padding-bottom: 0;
+	}
+
+	&--disclaimer {
+		padding: 3.12rem 2rem;
+		background-color: $cor-cinza;
+		box-shadow: 0 0.5rem 1rem -0.2rem rgba(black, 0.2);
+	}
 }
 
-.container--hero {
-	position: relative;
-	align-items: end;
-	width: 100%;
+.container {
+	&--hero {
+		position: relative;
+		align-items: end;
+		width: 100%;
+	}
 }
 
 .div-lira {
@@ -22,4 +32,8 @@
 	right: 0;
 	bottom: 0;
 	transform: translateX(10%);
+}
+
+.disclaimer__paragrafo {
+	font-size: 1.33rem;
 }
