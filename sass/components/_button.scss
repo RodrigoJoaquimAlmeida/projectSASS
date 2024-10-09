@@ -12,4 +12,8 @@
 	&--centralizado {
 		@extend %botao--centralizado;
 	}
+
+	&--texto-pequeno {
+		@extend %botao--texto-pequeno;
+	}
 }

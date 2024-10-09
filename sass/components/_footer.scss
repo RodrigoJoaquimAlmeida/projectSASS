@@ -15,4 +15,8 @@
 		text-decoration: none;
 		color: inherit;
 	}
+
+	@include respond(small) {
+		justify-content: center;
+	}
 }

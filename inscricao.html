@@ -3,8 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Inscrição Jornada Python</title>
+		<link rel="preload" href="css/style.css" as="style" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="preload"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
+		/>
 	</head>
 	<body class="">
 		<section class="secao secao--hero">
@@ -70,6 +79,7 @@
 					<img
 						src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef668d5cacb28cd77d5ef_jo%C3%A3o%20lira%20%2B%20dash.webp"
 						alt="Imagem do Lira"
+						loading="lazy"
 					/>
 				</div>
 			</div>
@@ -91,6 +101,8 @@
 					<img
 						src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef84825a7b7d2f1aef5e3_%5BELEMENTO%5D%20seta%20dupla.png"
 						alt="Icone Seta"
+						class="img-seta"
+						loading="lazy"
 					/>
 					<h2 class="titulo">Siga o <span>passo a passo!</span></h2>
 				</div>
@@ -102,6 +114,7 @@
 									src="img\alert-triangle-svgrepo-com.svg"
 									alt="Icone Exclamacao"
 									class="passo__icone"
+									loading="lazy"
 								/>
 							</div>
 							<p class="passo__titulo passo__titulo--azul">
@@ -121,6 +134,7 @@
 									src="img\certified-svgrepo-com.svg"
 									alt="Icone Certified"
 									class="passo__icone"
+									loading="lazy"
 								/>
 							</div>
 							<p class="passo__titulo passo__titulo--azul">
@@ -141,6 +155,7 @@
 									src="img\chart-mixed-svgrepo-com.svg"
 									alt="Icone Exclamacao"
 									class="passo__icone"
+									loading="lazy"
 								/>
 							</div>
 							<p class="passo__titulo passo__titulo--azul">
@@ -161,6 +176,7 @@
 									src="img\python-127-svgrepo-com.svg"
 									alt="Icone Exclamacao"
 									class="passo__icone"
+									loading="lazy"
 								/>
 							</div>
 							<p class="passo__titulo passo__titulo--azul">
@@ -178,6 +194,7 @@
 						src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef848a5d528c80b0c3f6b_%5BELEMENTO%5D%20jo%C3%A3o%20lira%20e%20planilha.webp"
 						alt="Imagem Lira Python"
 						class="img-lira"
+						loading="lazy"
 					/>
 				</div>
 			</div>
@@ -188,8 +205,10 @@
 					<img
 						src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/62cef98e3d834a18ba77139f_%5BELEMENTO%5D%20seta-dupla.png"
 						alt="Icone Seta Baixo"
+						class="img-seta"
+						loading="lazy"
 					/>
-					<h2 class="titulo">
+					<h2 class="titulo titulo--pequeno">
 						Nesse <span>evento gratuito</span> você vai aprender:
 					</h2>
 				</div>
@@ -199,6 +218,7 @@
 							src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64ecec733661d11fda8a436c_%5BLPY15%5D%20Thumb%20-%20Aula%201.webp"
 							alt="Lira Power Up"
 							class="aprender-img"
+							loading="lazy"
 						/>
 					</a>
 					<a href="https://www.youtube.com/watch?v=A1ynfjf2UDE">
@@ -206,6 +226,7 @@
 							src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/659dac28e97f5316e0e4fe06_%5BLPY15%5D%20Thumb%20-%20Aula%202%20-%20sem%20data%20(1).webp"
 							alt="Lira Insights"
 							class="aprender-img"
+							loading="lazy"
 						/>
 					</a>
 					<a href="https://www.youtube.com/watch?v=uwOfcEle5Mo">
@@ -213,6 +234,7 @@
 							src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64ecec95d687718995720dee_%5BLPY15%5D%20Thumb%20-%20Aula%203.webp"
 							alt="Lira Python IA"
 							class="aprender-img"
+							loading="lazy"
 						/>
 					</a>
 					<a href="https://www.youtube.com/watch?v=0eGOjMIpL7o">
@@ -220,11 +242,12 @@
 							src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/64ececa07913e34e13d347ff_%5BLPY15%5D%20Thumb%20-%20Aula%204.webp"
 							alt="Lira Python Dev"
 							class="aprender-img"
+							loading="lazy"
 						/>
 					</a>
 				</div>
 				<button
-					class="botao botao--amarelo botao--centralizado js-botao"
+					class="botao botao--amarelo botao--centralizado botao--texto-pequeno js-botao"
 				>
 					Quero assistir as aulas de graça
 				</button>
@@ -262,6 +285,7 @@
 					<img
 						src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/666a0826380e88459580269b_pgcpy-lira%20(1)-p-500.webp"
 						alt="Foto Lira Quem"
+						loading="lazy"
 					/>
 				</div>
 			</div>
@@ -272,6 +296,7 @@
 					src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/61b9f085f608c40d5a8b97f9_logo%20hash%20quadrada%20h%20(1).webp"
 					alt="Logo Hashtag"
 					class="rodape__logo"
+					loading="lazy"
 				/>
 				<a
 					href="https://excelparaestagio.klickpages.com.br/politica-privacidade"
@@ -304,7 +329,7 @@
 					<input
 						type="text"
 						class="popup__input popup__input--amarelo"
-						placeholder="*Insira seu Whatsapp com DDD"
+						placeholder="Insira seu Whatsapp com DDD"
 					/>
 				</div>
 

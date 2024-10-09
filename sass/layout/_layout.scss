@@ -5,6 +5,11 @@
 	display: flex;
 	flex-flow: column;
 	padding: 6.1rem 2rem;
+	overflow: hidden;
+
+	@include respond(tiny) {
+		padding: 3.9rem 2rem;
+	}
 }
 
 .container {

@@ -30,16 +30,31 @@
 		position: relative;
 		align-items: end;
 		width: 100%;
+
+		@include respond(small) {
+			flex-flow: column;
+			align-items: center;
+			gap: 3.12rem;
+		}
 	}
 
 	&--passo,
 	&--aprender {
 		@include flex($direction: column, $gap: 6rem, $align: start);
+		@include respond(small) {
+			gap: 3.9rem;
+		}
 	}
 
 	&--quem {
 		width: 100%;
 		position: relative;
+
+		@include respond(small) {
+			flex-flow: column;
+			align-items: center;
+			gap: 1.12rem;
+		}
 	}
 }
 
@@ -48,21 +63,48 @@
 		grid-template-columns: repeat(3, 1fr);
 		row-gap: 6rem;
 		column-gap: 3rem;
+
+		@include respond(small) {
+			grid-template-columns: repeat(2, 1fr);
+			row-gap: 3.12rem;
+			column-gap: 2rem;
+		}
+
+		@include respond(small) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&--aprender {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 4rem;
+
+		@include respond(small) {
+			gap: 2rem;
+		}
+
+		@include respond(tiny) {
+			grid-template-columns: 1fr;
+			gap: 3.12rem;
+			align-self: center;
+		}
 	}
 }
 
 .div-lira {
 	position: absolute;
 	display: flex;
-	height: 60rem;
+	width: 70%;
 	right: 0;
 	bottom: 0;
 	transform: translateX(10%);
+
+	@include respond(small) {
+		position: relative;
+		transform: none;
+		width: 100%;
+		max-width: 53rem;
+	}
 }
 
 .disclaimer__paragrafo {
@@ -73,6 +115,17 @@
 	grid-column: 2;
 	grid-row: 1 / span 2;
 	align-self: center;
+
+	@include respond(small) {
+		grid-row: auto;
+		grid-column: 1 / span 2;
+		max-width: 27.5rem;
+		justify-self: center;
+	}
+
+	@include respond(tiny) {
+		grid-column: auto;
+	}
 }
 
 .cabecalho-titulo {
@@ -86,6 +139,11 @@
 	&:hover {
 		transform: scale(1.05);
 	}
+
+	@include respond(tiny) {
+		width: 100%;
+		max-width: 48rem;
+	}
 }
 
 .quem {
@@ -93,6 +151,11 @@
 		margin-bottom: 6rem;
 		max-width: 50%;
 		@include flex($direction: column, $gap: 2rem);
+
+		@include respond(small) {
+			gap: 3.2rem;
+			max-width: 100%;
+		}
 	}
 	&__cabecalho {
 		color: $cor-cinza-claro;
@@ -107,7 +170,7 @@
 		border-radius: 0.96rem;
 		padding: 2.5rem;
 		line-height: 1.2;
-		font-weight: 100;
+		font-weight: 400;
 		text-align: justify;
 		font-size: 1.95rem;
 	}
@@ -117,5 +180,24 @@
 		max-width: 20%;
 		bottom: 0;
 		right: 0;
+
+		@include respond(small) {
+			position: relative;
+			max-width: 25%;
+		}
+
+		@include respond(tiny) {
+			max-width: 30%;
+		}
+	}
+}
+
+.img-seta {
+	@include respond(small) {
+		width: 3.5rem;
+	}
+
+	@include respond(tiny) {
+		width: 3rem;
 	}
 }

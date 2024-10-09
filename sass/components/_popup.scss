@@ -78,6 +78,11 @@
 		padding: 3.12rem;
 		border-radius: 2.5rem;
 		box-shadow: inset 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.25);
+
+		@include respond(tiny) {
+			max-width: 95%;
+			padding: 2rem;
+		}
 		& .titulo {
 			font-size: 2.76rem;
 			line-height: 1.2;
