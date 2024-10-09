@@ -10,7 +10,8 @@
 @import 'layout/layout';
 
 // 4. Components
-@import 'components/button', 'components/caixa', 'components/passo';
+@import 'components/button', 'components/caixa', 'components/passo',
+	'components/footer', 'components/popup';
 
 // 5. Pages
 @import 'pages/inscricao';

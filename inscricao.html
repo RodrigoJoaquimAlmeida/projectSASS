@@ -6,7 +6,7 @@
 		<title>Document</title>
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
-	<body>
+	<body class="">
 		<section class="secao secao--hero">
 			<div class="container container--hero">
 				<div class="caixa">
@@ -62,7 +62,7 @@
 						</li>
 					</ul>
 					<p class="caixa__subtitulo">100% Online e Gratuito</p>
-					<button class="botao botao--amarelo">
+					<button class="botao botao--amarelo js-botao">
 						Quero Participar
 					</button>
 				</div>
@@ -223,7 +223,9 @@
 						/>
 					</a>
 				</div>
-				<button class="botao botao--amarelo botao--centralizado">
+				<button
+					class="botao botao--amarelo botao--centralizado js-botao"
+				>
 					Quero assistir as aulas de graça
 				</button>
 			</div>
@@ -264,5 +266,56 @@
 				</div>
 			</div>
 		</section>
+		<footer class="rodape">
+			<div class="container container--rodape">
+				<img
+					src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/61b9f085f608c40d5a8b97f9_logo%20hash%20quadrada%20h%20(1).webp"
+					alt="Logo Hashtag"
+					class="rodape__logo"
+				/>
+				<a
+					href="https://excelparaestagio.klickpages.com.br/politica-privacidade"
+					target="_blank"
+					>Política de Privacidade</a
+				>
+				<p>|</p>
+				<a
+					href="https://excelparaestagio.klickpages.com.br/termos-uso"
+					target="_blank"
+					>Termos de Uso</a
+				>
+			</div>
+		</footer>
+		<div class="popup">
+			<form class="popup__container">
+				<div class="popup__inputs">
+					<input
+						type="text"
+						class="popup__input popup__input--amarelo"
+						placeholder="*Seu Primeiro Nome"
+						required
+					/>
+					<input
+						type="text"
+						class="popup__input popup__input--amarelo"
+						placeholder="*Seu Melhor E-mail"
+						required
+					/>
+					<input
+						type="text"
+						class="popup__input popup__input--amarelo"
+						placeholder="*Insira seu Whatsapp com DDD"
+					/>
+				</div>
+
+				<button class="popup__botao popup__botao--amarelo">
+					Quero garantir a minha vaga!
+				</button>
+				<div class="popup__fechar popup__fechar--amarelo js-botao">
+					<p>x</p>
+				</div>
+			</form>
+		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
